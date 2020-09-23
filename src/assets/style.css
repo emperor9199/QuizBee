@@ -17,7 +17,7 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  margin: auto;
+  margin: 0;
 }
 
 .title {
@@ -68,17 +68,28 @@
   position: absolute;
   width: 1024px;
   font-size: 3em;
+  top: 150px;
+  text-align: center;
+}
+
+.answer-key {
+  position: absolute;
+  width: 1024px;
+  font-size: 1em;
   top: 250px;
   text-align: center;
+  list-style: none;
+}
+
+.list-style {
+  list-style: none;
 }
 
 .playBtn {
   position: absolute;
   font-size: 1.4em;
   padding: 10px;
-  top: 350px;
-  background-color: rgb(46, 182, 46);
-  color: rgb(255, 255, 255);
+  top: 450px;
   width: 150px;
   left: 0px;
   right: 0px;

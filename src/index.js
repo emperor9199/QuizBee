@@ -4,12 +4,14 @@ import "./assets/style.css";
 import quizService from "./quizService/index";
 import QuestionBox from "./components/QuestionBox";
 import Result from "./components/Result";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class QuizBee extends Component {
   state = {
     questionBank: [],
     score: 0,
     responses: 0,
+    answerSheet: [],
   };
 
   getQuestions = () => {
@@ -29,6 +31,7 @@ class QuizBee extends Component {
 
     this.setState({
       responses: this.state.responses < 5 ? this.state.responses + 1 : 5,
+      answerSheet: [...this.state.answerSheet, correctAns],
     });
   };
 
@@ -38,6 +41,7 @@ class QuizBee extends Component {
     this.setState({
       score: 0,
       responses: 0,
+      answerSheet: [],
     });
   };
 
@@ -63,7 +67,11 @@ class QuizBee extends Component {
           )}
 
         {this.state.responses === 5 ? (
-          <Result score={this.state.score} playAgain={this.playAgain} />
+          <Result
+            score={this.state.score}
+            answerSheet={this.state.answerSheet}
+            playAgain={this.playAgain}
+          />
         ) : null}
       </div>
     );
