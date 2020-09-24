@@ -2,6 +2,7 @@
 
 * {
   font-family: "Raleway", sans-serif;
+  background-color: #d2e0f7;
 }
 
 .container {
@@ -18,6 +19,7 @@
   left: 0px;
   right: 0px;
   margin: 0;
+  background-color: white;
 }
 
 .title {
@@ -33,6 +35,7 @@
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
+  background-color: rgb(250, 250, 250);
 }
 
 .questionBox {
