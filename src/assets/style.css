@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-
-* {
-  font-family: "Raleway", sans-serif;
-  background-color: #d2e0f7;
+body {
+  background-image: url("./background.jpg");
 }
 
 .container {
